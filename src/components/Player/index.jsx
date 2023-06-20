@@ -1,15 +1,16 @@
 import React, { useContext } from "react";
 
-import { GameContext } from '../../contexts/GameContext'
+import { GameContext } from '../../contexts/GameContext';
+import './style.css'
 
 const Player = () => {
-    const context = useContext(GameContext);
+    const { isXNext } = useContext(GameContext);
 
     return (
         <>
-            Player
+            <h1>Player: {isXNext? 'O' : 'X'}</h1>
         </>
-    )
+    );
 }
 
 export default Player;

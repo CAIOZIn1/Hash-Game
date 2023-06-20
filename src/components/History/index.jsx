@@ -3,12 +3,18 @@ import React, { useContext } from "react";
 import { GameContext } from '../../contexts/GameContext'
 
 const History = () => {
-    const context = useContext(GameContext);
+    const {history, setHisory} = useContext(GameContext);
 
     return (
-        <>
-            History
-        </>
+        <div>
+            {history.map((data, index) => (
+                <div>
+                    <button>
+                        {index}
+                    </button>
+                </div>
+            ))}
+        </div>
     )
 }
 

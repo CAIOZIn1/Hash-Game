@@ -1,0 +1,22 @@
+.frame{
+    position: absolute;
+    background-color: #f8eada;
+    z-index: 2;
+    width: 70%;
+    height: 64%;
+    top: 10%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition-delay: 1s;
+    transition: opacity 1s;
+}
+
+.frame .winner{
+    font-size: 4vw;
+    color: #05a081;
+    font-family: sans-serif;
+    font-weight: bold;
+}

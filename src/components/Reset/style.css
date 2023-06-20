@@ -1,0 +1,19 @@
+.button-reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.button-reset button{
+    text-align: center;
+    margin-bottom: 20px;
+    background: coral;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px; 
+    font-size: 13px;
+    width: 20%;
+    height: 40px;
+}
