@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import { GameContext } from '../../contexts/GameContext';
 
@@ -10,10 +10,17 @@ import Winner from "../Winner";
 import History from "../History";
 
 const Board = () => {
-    const {squares, setWhoIsWinner, history} = useContext(GameContext);
+    const {squares, setWhoIsWinner, count, setCount, add, setAdd} = useContext(GameContext);
+
 
     useEffect(() => {
         const winner = calculateWinner(squares);
+
+        if(add){
+            setCount(count + 1);
+        }
+
+        setAdd(true);
 
         if(winner){
             setWhoIsWinner(winner);
@@ -30,7 +37,7 @@ const Board = () => {
                 ))}
             </div>
             <Reset />
-            <History />
+            <History count={count} />
         </div>
     );
 }

@@ -17,7 +17,7 @@ const Square = ({ value, index }) => {
     setHistory([
       ...history, 
       {
-        squares: [...newSquares],
+        squares: [...squares],
         isNext: !isXNext
     }]);
   }

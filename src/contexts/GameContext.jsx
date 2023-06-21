@@ -7,6 +7,8 @@ const GameContextProvider = ({ children }) => {
     const [isXNext, setIsXNext] = useState(false);
     const [whoIsWinner, setWhoIsWinner] = useState('');
     const [history, setHistory] = useState([]);
+    const [count, setCount] = useState(-1);
+    const [add, setAdd] = useState(true);
 
     const state = {
         squares,
@@ -16,7 +18,11 @@ const GameContextProvider = ({ children }) => {
         whoIsWinner,
         setWhoIsWinner,
         history,
-        setHistory
+        setHistory,
+        count,
+        setCount,
+        add,
+        setAdd
     };
     
     return (

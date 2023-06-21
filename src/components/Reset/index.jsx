@@ -4,12 +4,15 @@ import { GameContext } from '../../contexts/GameContext'
 import './style.css'
 
 const Reset = () => {
-    const { setSquares, setIsXNext, setWhoIsWinner } = useContext(GameContext);
+    const { setSquares, setIsXNext, setWhoIsWinner, setHistory, setCount } = useContext(GameContext);
 
     function handleClick() {
         setSquares(Array(9).fill(null))
         setIsXNext(false);
         setWhoIsWinner('');
+        const newHistory = [];
+        setHistory(newHistory);
+        setCount(-1)
     }
 
     return (
