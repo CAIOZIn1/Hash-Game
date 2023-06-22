@@ -1,10 +1,10 @@
-<h1>React Date</h1>
+<h1>Hash Game</h1>
 
 >projeto finalizado
 
 <br>
 
-<h3> O projeto em questão maipula datas, adcionando mais ou menos dias, meses ou anos.</h3>
+<h3> Jogo da velha desenvolvido com React :)</h3>
 
 <br>
 
