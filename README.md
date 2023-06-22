@@ -2,14 +2,11 @@
 
 >projeto finalizado
 
-<br>
-
 <h3> Jogo da velha desenvolvido com React :)</h3>
 
 <br>
 
 acesse em: https://hash-game-two.vercel.app/
-
 
 <hr>
 <br>
