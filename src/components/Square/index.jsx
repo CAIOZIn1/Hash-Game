@@ -18,7 +18,8 @@ const Square = ({ value, index }) => {
       ...history, 
       {
         squares: [...squares],
-        isNext: !isXNext
+        isNext: !isXNext,
+        whoIsWinner,
     }]);
   }
 

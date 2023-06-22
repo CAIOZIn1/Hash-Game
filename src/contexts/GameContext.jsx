@@ -22,7 +22,7 @@ const GameContextProvider = ({ children }) => {
         count,
         setCount,
         add,
-        setAdd
+        setAdd,
     };
     
     return (
